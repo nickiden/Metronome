@@ -15,6 +15,7 @@ struct CircleSelect: View {
     
     // create a state to indicate tempo
     @State private var tempo: CGFloat = 0.0
+    @State private var start = false
     
     var body: some View {
         
@@ -22,11 +23,7 @@ struct CircleSelect: View {
         
         VStack (spacing: 20){
             
-            HStack{
-                Text("0 bpm")
-                Slider(value: $tempo)
-                Text("220 bpm")
-            }.padding()
+            
             
             ZStack {
                 // create circle for showing underlay
@@ -37,17 +34,28 @@ struct CircleSelect: View {
                 // overlay circle to show tempo
                 Circle()
                 .trim(from: 0, to: tempo)
-                .stroke(Color.red, lineWidth: 25)
+                .stroke(Color.yellow, lineWidth: 25)
+                
                 .rotationEffect(.degrees(-90))
+            
                 
                 // overlay to show tempo
                 .overlay(
-                    Text("\(Int(tempo * 220.0))bpm")
+                    Text("\(Int(tempo * 220.0)) bpm")
                         .font(.largeTitle))
                     
             }
                 // padding for the circle shapes
                 .padding(50)
+                .frame(height: 500)
+            
+            HStack{
+                Text("0 bpm")
+                Slider(value: $tempo)
+                Text("220 bpm")
+            }.padding()
+            Spacer()
+            
         }
            
     }
