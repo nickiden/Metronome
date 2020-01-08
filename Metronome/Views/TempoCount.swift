@@ -12,7 +12,7 @@ import SwiftUI
 
 struct TempoCount: View {
     // create a list of time signatures
-    var timeSign = ["1/4","2/4","3/4","4/4","6/8"]
+    var timeSign = ["1/1","1/2","2/2","1/4","2/4","3/4","4/4","5/4","6/8","7/8"]
     
     // state for time signatures
     @State private var selectedTime = 0
