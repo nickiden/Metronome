@@ -14,9 +14,14 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Text("Metronome")
-                .font(.title)
             
+            // stack multiple views
+            CircleSelect()
+            Spacer()
+            TempoCount()
+            Spacer()
+            StartButton()
+            Spacer()
         }
         
     }

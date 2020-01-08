@@ -21,9 +21,16 @@ struct CircleSelect: View {
         
        
         
-        VStack (spacing: 20){
+        VStack {
             
-            
+            HStack{
+                
+                Text("0 bpm")
+                Slider(value: $tempo)
+                .frame(maxHeight:30)
+                Text("250 bpm")
+            }.padding()
+           
             // zstack for outer ring (bpm)
             ZStack {
                 // create circle for showing underlay
@@ -47,14 +54,9 @@ struct CircleSelect: View {
             }
                 // padding for the circle shapes
                 .padding(50)
-                .frame(height: 500)
+                .frame(height: 450)
             
-            HStack{
-                Text("0 bpm")
-                Slider(value: $tempo)
-                Text("250 bpm")
-            }.padding()
-            Spacer()
+            
             
         }
            

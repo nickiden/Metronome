@@ -22,12 +22,12 @@ struct TempoCount: View {
         
             // create picker of times
         Section {
-            Picker(selection: $selectedTime, label: Text("Sign")
+            Picker(selection: $selectedTime, label: Text("Time Signature")
                 ) {
                     ForEach(0 ..< timeSign.count) {
                         Text(self.timeSign[$0]).tag($0)
                     }
-            }.padding()
+            }.frame(maxHeight: 70)
         }
  }
 }
