@@ -16,13 +16,13 @@ struct ContentView: View {
         VStack {
             
             // stack multiple views
-            CircleSelect()
             Spacer()
+            CircleSelect()
             TempoCount()
             Spacer()
             StartButton()
             Spacer()
-        }
+        }.edgesIgnoringSafeArea(.all)
         
     }
 }

@@ -16,6 +16,7 @@
 		EE7EBE1523BED30500F3C48D /* CircleSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EBE1423BED30500F3C48D /* CircleSelect.swift */; };
 		EE7EBE1823BEF32900F3C48D /* TempoCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EBE1723BEF32900F3C48D /* TempoCount.swift */; };
 		EEECF99823C57B6700AA9A28 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECF99723C57B6700AA9A28 /* StartButton.swift */; };
+		EEECF99A23C6D05D00AA9A28 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEECF99923C6D05D00AA9A28 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EE7EBE1423BED30500F3C48D /* CircleSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSelect.swift; sourceTree = "<group>"; };
 		EE7EBE1723BEF32900F3C48D /* TempoCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoCount.swift; sourceTree = "<group>"; };
 		EEECF99723C57B6700AA9A28 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		EEECF99923C6D05D00AA9A28 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EE7EBE0423BED10A00F3C48D /* ContentView.swift */,
+				EEECF99923C6D05D00AA9A28 /* SettingsView.swift */,
 				EE7EBE1423BED30500F3C48D /* CircleSelect.swift */,
 				EEECF99723C57B6700AA9A28 /* StartButton.swift */,
 				EE7EBE1723BEF32900F3C48D /* TempoCount.swift */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEECF99A23C6D05D00AA9A28 /* SettingsView.swift in Sources */,
 				EEECF99823C57B6700AA9A28 /* StartButton.swift in Sources */,
 				EE7EBE0123BED10A00F3C48D /* AppDelegate.swift in Sources */,
 				EE7EBE1523BED30500F3C48D /* CircleSelect.swift in Sources */,
