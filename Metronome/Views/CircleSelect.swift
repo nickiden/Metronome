@@ -56,6 +56,7 @@ struct CircleSelect: View {
                 Circle()
                     .trim(from: 0, to: timer)
                     .stroke(Color.blue, lineWidth: 5)
+                    .frame(height: 283)
                 
                     .rotationEffect(.degrees(-90))
                 
@@ -73,6 +74,13 @@ struct CircleSelect: View {
                 .frame(maxHeight:30)
                 Text("250 bpm")
             }.padding()
+            
+            // stepper to set timer
+            Stepper(value: $timer, in: 0...20, step: 0.50) {
+                Text("\(timer, specifier: "%g") minutes")
+            }.padding()
+                
+            
             
             
         }

@@ -19,10 +19,9 @@ struct ContentView: View {
         VStack {
             
             // stack multiple views
-            Spacer()
-            CircleSelect()
            
-            Spacer()
+            CircleSelect()
+          
             StartButton()
             Spacer()
             
