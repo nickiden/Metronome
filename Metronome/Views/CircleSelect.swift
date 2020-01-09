@@ -15,6 +15,7 @@ struct CircleSelect: View {
     
     // create a state to indicate tempo
     @State private var tempo: CGFloat = 0.0
+    @State private var timer: CGFloat = 0.0
     @State private var start = false
     
     var body: some View {
@@ -23,13 +24,7 @@ struct CircleSelect: View {
         
         VStack {
             
-            HStack{
-                
-                Text("0 bpm")
-                Slider(value: $tempo)
-                .frame(maxHeight:30)
-                Text("250 bpm")
-            }.padding()
+            
            
             // zstack for outer ring (bpm)
             ZStack {
@@ -50,12 +45,34 @@ struct CircleSelect: View {
                 .overlay(
                     Text("\(Int(tempo * 250.0)) bpm")
                         .font(.largeTitle))
+                
+                // inner circle for monitoring timer
+                Circle()
+                    .stroke(Color.blue, lineWidth: 5)
+                    .opacity(0.1)
+                    .frame(height: 283)
+                   
+                
+                Circle()
+                    .trim(from: 0, to: timer)
+                    .stroke(Color.blue, lineWidth: 5)
+                
+                    .rotationEffect(.degrees(-90))
+                
+                
                     
             }
                 // padding for the circle shapes
                 .padding(50)
                 .frame(height: 450)
             
+            HStack{
+                
+                Text("0 bpm")
+                Slider(value: $tempo)
+                .frame(maxHeight:30)
+                Text("250 bpm")
+            }.padding()
             
             
         }

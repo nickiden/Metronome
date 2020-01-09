@@ -11,20 +11,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
+        
+        TabView {
         
         VStack {
             
             // stack multiple views
             Spacer()
             CircleSelect()
-            TempoCount()
+           
             Spacer()
             StartButton()
             Spacer()
+            
+            
         }.edgesIgnoringSafeArea(.all)
         
+            
+            ContentView()
+                .tabItem {
+                    Image(systemName: "metronome")
+                    Text("Metronome")
+            }
+        
+            
+            
+           SettingsView()
+            .tabItem {
+                Image(systemName: "gear")
+                Text("Settings")
+            }
+        
+            
+        
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

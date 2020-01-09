@@ -44,10 +44,11 @@ struct SettingsView: View {
                         Text(self.clickSounds[$0])
                 }
             }
+                TempoCount()
         }
             
         Section(header: Text("About Us")) {
-                
+              // detail information about the creaters of the app
             HStack {
                         Text("Company")
                         Spacer()
