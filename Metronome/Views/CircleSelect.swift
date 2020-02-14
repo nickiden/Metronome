@@ -24,8 +24,6 @@ struct CircleSelect: View {
         
         VStack {
             
-            
-           
             // zstack for outer ring (bpm)
             ZStack {
                 // create circle for showing underlay
@@ -38,7 +36,7 @@ struct CircleSelect: View {
                 .trim(from: 0, to: tempo)
                 .stroke(Color.yellow, lineWidth: 25)
                 
-                .rotationEffect(.degrees(-90))
+                    .rotationEffect(.degrees(Constraints.CircleBuild.degreeValue))
             
                 
                 // overlay to show tempo
@@ -48,17 +46,17 @@ struct CircleSelect: View {
                 
                 // inner circle for monitoring timer
                 Circle()
-                    .stroke(Color.blue, lineWidth: 5)
+                    .stroke(Color.blue, lineWidth: 9)
                     .opacity(0.1)
                     .frame(height: 283)
                    
                 
                 Circle()
                     .trim(from: 0, to: timer)
-                    .stroke(Color.blue, lineWidth: 5)
+                    .stroke(Color.blue, lineWidth: 9)
                     .frame(height: 283)
                 
-                    .rotationEffect(.degrees(-90))
+                    .rotationEffect(.degrees(Constraints.CircleBuild.degreeValue))
                 
                 
                     
@@ -76,9 +74,9 @@ struct CircleSelect: View {
             }.padding()
             
             // stepper to set timer
-            Stepper(value: $timer, in: 0...20, step: 0.50) {
-                Text("\(timer, specifier: "%g") minutes")
-            }.padding()
+            //Stepper(value: $timer, in: 0...3, step: 0.05) {
+            //    Text("\(timer, specifier: "%g") minutes")
+           // }.padding()
                 
             
             

@@ -9,47 +9,44 @@
 //          this program is a simple metronome application. The user can use a slider wheel to select
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
     
+    
     var body: some View {
         
-        TabView {
+        
+        
+       
         
         VStack {
             
             // stack multiple views
            
             CircleSelect()
-          
+            Spacer()
             StartButton()
             Spacer()
             
             
+            
+            
         }.edgesIgnoringSafeArea(.all)
         
-            
-            ContentView()
-                .tabItem {
-                    Image(systemName: "metronome")
-                    Text("Metronome")
-            }
-        
-            
-            
-           SettingsView()
-            .tabItem {
-                Image(systemName: "gear")
-                Text("Settings")
-            }
-        
-            
-        
-    }
+    
   }
+    
+    
+    
+    
+    
 }
 
+
+
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }

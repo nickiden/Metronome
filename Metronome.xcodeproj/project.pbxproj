@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4083FE23F641F800FE6864 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4083FD23F641F800FE6864 /* Constraints.swift */; };
+		EE40840623F6705100FE6864 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE40840523F6705100FE6864 /* AppView.swift */; };
 		EE7EBE0123BED10A00F3C48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EBE0023BED10A00F3C48D /* AppDelegate.swift */; };
 		EE7EBE0323BED10A00F3C48D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EBE0223BED10A00F3C48D /* SceneDelegate.swift */; };
 		EE7EBE0523BED10A00F3C48D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7EBE0423BED10A00F3C48D /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4083FD23F641F800FE6864 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		EE40840523F6705100FE6864 /* AppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		EE7EBDFD23BED10A00F3C48D /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7EBE0023BED10A00F3C48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7EBE0223BED10A00F3C48D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE74AF8D23F5A5680013AA1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE4083FD23F641F800FE6864 /* Constraints.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EE7EBDF423BED10A00F3C48D = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 				EE7EBE0B23BED10B00F3C48D /* LaunchScreen.storyboard */,
 				EE7EBE0E23BED10B00F3C48D /* Info.plist */,
 				EE7EBE0823BED10B00F3C48D /* Preview Content */,
+				EE74AF8D23F5A5680013AA1D /* Models */,
 			);
 			path = Metronome;
 			sourceTree = "<group>";
@@ -86,6 +99,7 @@
 		EE7EBE1623BED32000F3C48D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE40840523F6705100FE6864 /* AppView.swift */,
 				EE7EBE0423BED10A00F3C48D /* ContentView.swift */,
 				EEECF99923C6D05D00AA9A28 /* SettingsView.swift */,
 				EE7EBE1423BED30500F3C48D /* CircleSelect.swift */,
@@ -168,8 +182,10 @@
 			files = (
 				EEECF99A23C6D05D00AA9A28 /* SettingsView.swift in Sources */,
 				EEECF99823C57B6700AA9A28 /* StartButton.swift in Sources */,
+				EE40840623F6705100FE6864 /* AppView.swift in Sources */,
 				EE7EBE0123BED10A00F3C48D /* AppDelegate.swift in Sources */,
 				EE7EBE1523BED30500F3C48D /* CircleSelect.swift in Sources */,
+				EE4083FE23F641F800FE6864 /* Constraints.swift in Sources */,
 				EE7EBE0323BED10A00F3C48D /* SceneDelegate.swift in Sources */,
 				EE7EBE0523BED10A00F3C48D /* ContentView.swift in Sources */,
 				EE7EBE1823BEF32900F3C48D /* TempoCount.swift in Sources */,
